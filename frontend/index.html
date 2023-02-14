@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="./src/script.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <title>Amount</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="main-elements-control">
+            <div class="animate__animated animate__rubberBand">
+                <p class="logo">Учет моих расходов</p>
+            </div>
+            <div class="text">
+                <label>
+                    Куда было птрачено: </br>
+                    <input type="text" class="text-input" placeholder="Куда было потрачено" id="newTaskTextField">
+                </label>
+                <label>
+                    Сколько было потрачено: </br>
+                    <input type="number" class="amount-input" placeholder="Сколько было потрачено" id="add-task-amount">
+                </label>
+                <div class="btn">
+                    <button onclick="createTask()" class="main__header">Добавить</button>
+                </div>
+            </div>
+            <div class="loader">
+                <div class="textError animate__animated animate__zoomInDown">хм...что-то пошло не так...</div>
+                <div class="task-deleting animate__animated animate__flash" id="del"></div>
+                <div class="spinner" id="loader"></div>
+            </div>
+            <div class="sum"></div>
+            <div id="content-page">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

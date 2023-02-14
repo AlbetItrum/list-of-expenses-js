@@ -1,0 +1,51 @@
+@media (max-width: 960px) {
+    .text {
+        display: grid;
+        justify-content: center;
+        column-gap: 10px;
+        padding-bottom: 15px;
+
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    .text input {
+        width: 500px;
+    }
+
+    .btn {
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+
+    .button {
+        width: 150px;
+    }
+
+    .task-container {
+        max-width: 600px;
+        overflow: hidden;
+    }
+
+    .main-elements-control {
+        word-wrap: break-word;
+    }
+
+    .task-container input {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    .text input {
+        width: 300px;
+    }
+    .task-container p {
+        width: 200px;
+    }
+    .task-container{
+        flex-direction: column;
+    }
+}
